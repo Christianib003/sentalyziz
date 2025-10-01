@@ -6,3 +6,6 @@ projects.md
 
 # Zipped files
 *.zip
+
+# Cache files
+__pycache__/
