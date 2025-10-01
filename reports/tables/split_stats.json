@@ -1,0 +1,23 @@
+{
+  "train": {
+    "total": 39665,
+    "pos": 19907,
+    "neg": 19758,
+    "pos_pct": 50.19,
+    "neg_pct": 49.81
+  },
+  "val": {
+    "total": 4958,
+    "pos": 2488,
+    "neg": 2470,
+    "pos_pct": 50.18,
+    "neg_pct": 49.82
+  },
+  "test": {
+    "total": 4959,
+    "pos": 2489,
+    "neg": 2470,
+    "pos_pct": 50.19,
+    "neg_pct": 49.81
+  }
+}
