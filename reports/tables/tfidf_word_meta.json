@@ -1,0 +1,9 @@
+{
+  "kind": "word",
+  "ngrams": "(1, 2)",
+  "max_features": 200000,
+  "min_df": 5,
+  "max_df": 0.95,
+  "sublinear_tf": true,
+  "vocab_size": 144145
+}

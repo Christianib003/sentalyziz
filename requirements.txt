@@ -7,3 +7,4 @@ seaborn
 tensorflow
 joblib
 nltk
+scipy
