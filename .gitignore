@@ -9,3 +9,6 @@ projects.md
 
 # Cache files
 __pycache__/
+
+# Large file
+data/external/*

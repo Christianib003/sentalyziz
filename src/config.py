@@ -9,6 +9,7 @@ DATA_PROCESSED = BASE_DIR / "data" / "processed"
 REPORTS_FIG = BASE_DIR / "reports" / "figures"
 REPORTS_TAB = BASE_DIR / "reports" / "tables"
 MODELS_DIR = BASE_DIR / "models"
+DATA_EXTERNAL = BASE_DIR / "data" / "external"
 
-for p in [DATA_RAW, DATA_INTERIM, DATA_PROCESSED, REPORTS_FIG, REPORTS_TAB, MODELS_DIR]:
+for p in [DATA_RAW, DATA_INTERIM, DATA_PROCESSED, REPORTS_FIG, REPORTS_TAB, MODELS_DIR, DATA_EXTERNAL]:
     p.mkdir(parents=True, exist_ok=True)
