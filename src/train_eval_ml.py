@@ -51,10 +51,6 @@ def run_lr_grid(Xtr, ytr, Xva, yva, Xte, yte, C_grid, *, feature_name="word"):
     return df, best, test_metrics, yte_pred, yte_score
 
 def run_svm_grids(feature_sets, ytr, yva, yte, C_grid):
-    """
-    feature_sets: dict name -> (Xtr, Xva, Xte)
-    returns: (results_df, best_row, best_model, yte_pred, yte_score)
-    """
     rows: List[Dict] = []
     best = None
     best_model = None
@@ -96,7 +92,6 @@ def run_svm_grids(feature_sets, ytr, yva, yte, C_grid):
 
     return df, best, test_metrics, yte_pred, yte_score, best_name
 
-# ---- plotting helpers here so notebook stays thin ----
 
 def plot_confmat(y_true, y_pred, title: str, fname: str):
     cm = confusion_matrix(y_true, y_pred)

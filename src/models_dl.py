@@ -13,9 +13,6 @@ def make_lstm_classifier(
     bidirectional: bool = True,
     embed_trainable: bool = False,
 ):
-    """
-    LSTM text classifier with optional pre-trained embeddings.
-    """
     inputs = keras.Input(shape=(max_len,), dtype="int32")
     if embedding_matrix is not None:
         emb = layers.Embedding(

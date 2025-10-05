@@ -29,7 +29,6 @@ def tokenize_and_pad(
     Xva = pad_sequences(tok.texts_to_sequences(val_texts),   maxlen=max_len, padding="post", truncating="post")
     Xte = pad_sequences(tok.texts_to_sequences(test_texts),  maxlen=max_len, padding="post", truncating="post")
 
-    # persist tokenizer
     DATA_INTERIM.mkdir(parents=True, exist_ok=True)
     with open(DATA_INTERIM / "tokenizer_config.json", "w") as f:
         f.write(tok.to_json())
