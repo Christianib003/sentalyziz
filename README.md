@@ -30,7 +30,7 @@ End-to-end sentiment analysis on IMDB movie reviews with **two complementary app
 9. [Artifacts & Reproducibility](#artifacts--reproducibility)
 10. [Troubleshooting](#troubleshooting)
 11. [Acknowledgments](#acknowledgments)
-12. [License](#license)
+12. [Contributors](#contributors)
 
 
 ## Highlights
