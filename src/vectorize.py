@@ -11,7 +11,7 @@ from .config import DATA_INTERIM, REPORTS_TAB
 
 @dataclass
 class VectMeta:
-    kind: str               # "word" | "char"
+    kind: str  
     ngrams: str
     max_features: int
     min_df: int
@@ -46,7 +46,7 @@ def make_word_tfidf(
         min_df=min_df,
         max_df=max_df,
         sublinear_tf=sublinear_tf,
-        lowercase=False,  # already cleaned
+        lowercase=False, 
     )
     Xtr = vec.fit_transform(train_text)
     Xva = vec.transform(val_text)
@@ -82,7 +82,6 @@ def make_char_tfidf(
     return vec, Xtr, Xva, Xte
 
 def make_union(Xw_tr, Xw_va, Xw_te, Xc_tr, Xc_va, Xc_te):
-    """Horizontally stack word + char features (sparse-safe)."""
     return (
         hstack([Xw_tr, Xc_tr]).tocsr(),
         hstack([Xw_va, Xc_va]).tocsr(),

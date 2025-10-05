@@ -3,10 +3,6 @@ import matplotlib.pyplot as plt
 from .config import REPORTS_FIG
 
 def save_fig(name: str, tight: bool = True, formats=("png", "svg")):
-    """
-    Save current Matplotlib figure to reports/figures as PNG and SVG by default,
-    while keeping the figure displayed inline in the notebook.
-    """
     REPORTS_FIG.mkdir(parents=True, exist_ok=True)
     if tight:
         plt.tight_layout()
